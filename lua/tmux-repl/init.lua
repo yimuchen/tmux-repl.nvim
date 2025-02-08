@@ -201,12 +201,10 @@ M.repl_pass_visual = function()
 			indent = line:find("[^%s]")
 		end
 		-- Skipping empty line
-		if not line:match("^%s*$") then
-			if idx == table.getn(lines) then
-				M.repl_send_line(line .. "\n") -- No not modify the last line
-			else
-				M.repl_send_line(line:sub(indent or 1))
-			end
+		if idx == table.getn(lines) then
+			M.repl_send_line(line .. "\n") -- No not modify the last line
+		else
+			M.repl_send_line(line:sub(indent or 1))
 		end
 	end
 	if line_count > 0 then -- Add final newline to ensure the item is executed
