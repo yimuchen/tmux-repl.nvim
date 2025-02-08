@@ -81,6 +81,8 @@ Below is a quick example of what it can do! Here I'm using a slightly modified
 backend for `matplotlib` so that I can justify the use of `tmux` by having
 in-line images be directly displayed inline!
 
+[![Watch the video](https://raw.githubusercontent.com/yimuchen/tmux-repl.nvim/main/demo/thumbnail.png)](https://raw.githubusercontent.com/yimuchen/tmux-repl.nvim/main/demo/demo.webm)
+
 
 [mini-ai]: https://github.com/echasnovski/mini.ai
 [tmux]: https://github.com/tmux/tmux/wiki
